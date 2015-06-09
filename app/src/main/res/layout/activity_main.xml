@@ -32,7 +32,9 @@
             android:id="@+id/button1"
             android:layout_gravity="center_horizontal"
             android:background="#F08C35"
-            android:layout_margin="5dp" />
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:onClick="showSpotifyToast" />
 
         <Button
             android:layout_width="220dp"
