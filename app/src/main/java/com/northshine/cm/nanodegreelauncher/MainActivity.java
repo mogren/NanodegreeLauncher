@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 
@@ -39,9 +40,10 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void showSpotifyToast(View view) {
+    public void showToastWithButtonText(View view) {
         Context context = getApplicationContext();
-        CharSequence text = "This button will launch my Spotify streamer!";
+        Button b = (Button) view;
+        CharSequence text = "This button will launch my " + b.getText();
         int duration = Toast.LENGTH_SHORT;
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
